@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Виды | Изобразительно искусство</title>
+		<link rel="shortcut icon" href="fav.jpg" type="image/jpg">
+		<link rel="stylesheet" type="text/css" href="Visual_art.css">
+		<script>
+			var smoothJumpUp = function() {
+				if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+					window.scrollBy(0,-50);
+				setTimeout(smoothJumpUp, 10);
+				}	
+				}
+				
+				var bigsize = "500"; 
+				var smallsize = "304"; 
+				function changeSizeImage(image) {
+					if (image.height == bigsize) image.height = smallsize;
+					else image.height = bigsize;
+				}
+		</script>
+	</head>
+	
+	 <body>
+		<div class="header" align="center">
+		<h1>ИЗОБРАЗИТЕЛЬНОЕ ИСКУССТВО</h1>
+		</div>
+		
+		<ul class="menu">
+		  <li><a href="Main.html">Главная</a></li>
+		  <li><a href="History.html">История</a></li>
+		  <li><a class="current">Виды</a>
+			<ul>
+				<li><a href="Architecture.html">Архитектура</a></li>
+				<li><a href="Painting.html">Живопись</a></li>
+				<li><a href="Graphics.html">Графика</a></li>
+				<li><a href="Sculpture.html">Скульптура</a></li>
+				<li><a href="DAA.html">Декоративно-прикладное искусство</a></li>
+			</ul>
+			</li>
+		  <li><a href="Genres.html">Жанры</a></li>
+		  <li><a href="Affect.html">Влияние и развитие</a></li>
+		</ul>
+		
+		<div class="main">
+			<div class="text">
+				<h2>Виды изобразительного искусства</h2>
+				<p>Изобразительное искусство как род человеческой 
+				деятельности подразделяется по способам формообразования 
+				на различные виды. Каждый из видов обладает определенным 
+				арсеналом выразительных средств. Наиболее известные виды
+				изображительного искусства:
+				<ul >
+					<li>Архитектура</li>
+					<li>Живопись</li>
+					<li>Графика</li>
+					<li>Скульптура</li>
+					<li>Декоративно-прикладное искусство</li>
+				</ul>
+				</p>
+				<hr>
+				<h3 align="left">Архитектура</h3>
+				<p>Это искусство проектировать и строить здания 
+				и сооружения, создающие пространственную 
+				среду для жизни и деятельности человека.<br>
+				<img src="Kinds1.jpg" onclick="changeSizeImage(this)"><br>
+				<a href="Architecture.html" class="link">Перейти к разделу "Архитектура"</a></p>
+				<hr>
+				<h3 align="left">Живопись</h3>
+				<p>Живопись – это вид изобразительного искусства, 
+				произведения которого создаются с помощью красок 
+				(темпера, масляные краски, акрил, гуашь).<br>
+				<img src="Kinds2.jpg" onclick="changeSizeImage(this)"><br>
+				<a href="Painting.html" class="link">Перейти к разделу "Живопись"</a></p>
+				<hr>
+				<h3 align="left">Графика</h3>
+				<p>Графика – это вид изобразительного искусства, 
+				включающий рисунок и печатные изображения. Рисунки 
+				выполняются 	карандашом, тушью, сепией, сангиной.<br>
+				<img src="Kinds3.jpg" onclick="changeSizeImage(this)"><br>
+				<a href="Graphics.html" class="link">Перейти к разделу "Графика"</a></p>
+				<hr>
+				<h3 align="left">Скульптура</h3>
+				<p>Скульптура – один из самых древних видов искусства.
+				Первые скульптурные произведения являлись идолами, 
+				оберегами, изображали древних богов. Различаются круглая 
+				скульптура (осматриваемая с разных сторон) и рельеф 
+				(высокий, средний, низкий, контррельеф).<br>
+				<img src="Kinds4.jpg" onclick="changeSizeImage(this)"><br>
+				<a href="Sculpture.html" class="link">Перейти к разделу "Скульптура"</a></p>
+				<hr>
+				<h3 align="left">Декоративно-прикладное искусство</h3>
+				<p>Область декоративного искусства: создание художественных 
+				изделий, имеющих практическое назначение в быту и отличающееся 
+				декоративной однообразностью. Предметы должны быть не только 
+				удобны, но должны приносить человеку эстетиче­ское наслаждение.<br>
+				<img src="Kinds5.jpg" onclick="changeSizeImage(this)"><br>
+				<a href="DAA.html" class="link">Перейти к разделу "Декоративно-прикладное искусство"</a></p>
+			</div>
+		</div>
+			
+		<a align="right" class="button" href="#" onclick="smoothJumpUp(); return false;"></a>
+	</body>
+</html>
